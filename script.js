@@ -68,33 +68,40 @@ function generatePassword(){
   
   // If user wants numbers add to master array
     if (useNum === true){
-      masterArr.concat(numArr);
+      masterArr.push(...numArr);
+      // push actually works, but they stay as separate arrays. concat just leave me with an empty array would like to see concat working though
+      // this needs to be deleted after we get both possibilities working
     }
 
   // If user wants special character add to master array
     if (useSpecChar === true){
-      masterArr.concat(specArr);
-    }
+      masterArr.push(...specArr);
+      }
+    
 
   // If user wants lowercase letter add to master array
     if (useLowerCase === true){
-      masterArr.concat(lowerCaseArr);
-    }
+      masterArr.push(...lowerCaseArr);
+      }
     
+
   // If user wants upper case letters add to master array
     if (useUpperCase === true){
-      masterArr.concat(upperCaseArr);
-    }
-
+      masterArr.push(...upperCaseArr);
+      }
+    console.log(masterArr);
+  
+  
   // New variable to hold value of new password
-  var newPass;
+  var newPassword;
   //Loop through userLength;
   for (var i = 0; i < userLength; i++) {
-    newPass.concat(Math.floor(Math.random() * masterArr.length));
+    var newUnit = (Math.floor(Math.random() * masterArr.length));
+    newPassword.push(newUnit);
   };
 
   //outside of loop return newPass
-  return newPass
+  return newPassword;
 
 };
 

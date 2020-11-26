@@ -99,20 +99,21 @@ function generatePassword() {
     // Getting all parameters setup for the new password
     
     if (userOptions.hasNum) {
-        masterArr.concat(numArr);
+        masterArr.push(...numArr);
     }
-    console.log(masterArr)
+   
     if (userOptions.hasSpecChar) {
-        masterArr.concat(specCharArr);
+        masterArr.push(...specCharArr);
     }
-    console.log(masterArr)
+   
     if (userOptions.hasLower) {
-        masterArr.concat(lowerCaseArr);
+        masterArr.push(...lowerCaseArr);
     }
-    console.log(masterArr)
+   
     if (userOptions.hasUpper) {
-        masterArr.concat(upperCaseArr);
+        masterArr.push(...upperCaseArr);
     }
+    
     console.log(masterArr)
 
     // Looping through to create a new password
