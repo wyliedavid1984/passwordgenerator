@@ -111,7 +111,8 @@ function generatePassword() {
         var newUnit = (getRandomElement(masterArr));
         
         console.log(newUnit);
-        
+        newUnit.toString();
+        console.log(newUnit);
         newPassword.push(newUnit);
     };
 

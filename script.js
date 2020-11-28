@@ -17,11 +17,12 @@ var masterArr = [];
 
 function generatePassword() {
 
-  // Variable for the new password.
+  // New variable to hold value of new password
   var newPassword = [];
+
   // prompt user to pick a length of password between 8 and 128
-  // save input to a var
-  // parseInt the user choice to make sure that it isn't a string
+  
+  // Stores user variable and turns it to a number.
   var userLength = parseInt(prompt("Please, select how long you would like your password to be. (between 8 and 128 characters)"));
 
   //Stop user from pick an number outside of the available range 
@@ -64,8 +65,6 @@ function generatePassword() {
   // If user wants numbers add to master array
   if (useNum === true) {
     masterArr.push(...numArr);
-    // push actually works, but they stay as separate arrays. concat just leave me with an empty array would like to see concat working though
-    // this needs to be deleted after we get both possibilities working
   }
 
   // If user wants special character add to master array
@@ -87,7 +86,7 @@ function generatePassword() {
   console.log(masterArr);
 
 
-  // New variable to hold value of new password
+  
   
 
   //Loop through userLength;
@@ -95,15 +94,16 @@ function generatePassword() {
 
     var newUnit = masterArr[(Math.floor(Math.random() * masterArr.length))];
     
+    newUnit.toString();
     console.log(newUnit);
-    
+        
     newPassword.push(newUnit);
     
   };
 
-  console.log(newPassword);
 
-  newPassword.join("");
+  newPassword = newPassword.join("");
+  console.log(newPassword);
   //outside of loop return newPass
   return newPassword;
 
