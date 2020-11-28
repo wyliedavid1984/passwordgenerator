@@ -5,23 +5,12 @@ var generateBtn = document.querySelector("#generate");
 
 var numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-var specCharArr = ["\`", "+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":", "\"", "\\", "!", "@", "#", "$", "5", "^", ".", ",", ";", "\/", "-", "_", "\="];
+var specCharArr = ["\`", "+", "-", "&", "|", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":", "\'", "\"", "\\", "!", "@", "#", "$", "5", "^", ".", ",", ";", "\/", "-", "_", "\="];
 
 var lowerCaseArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 var upperCaseArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-
-
-// Write password to the #password input
-function writePassword() {
-    
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
-
-    passwordText.value = password;
-
-};
 
 // Creates an object to store users password options
 function getOptions() {
@@ -92,7 +81,7 @@ function generatePassword() {
 
     console.log(userOptions);
 
-    var newPassword;
+    var newPassword= [];
 
     var masterArr = [];
 
@@ -119,13 +108,30 @@ function generatePassword() {
     // Looping through to create a new password
 
     for (var i = 0; i < userOptions.passwordLength; i++) {
-        newPassword.push(getRandomElement(masterArr));
+        var newUnit = (getRandomElement(masterArr));
         
+        console.log(newUnit);
+        
+        newPassword.push(newUnit);
     };
+
+    console.log(newPassword);
+    newPassword.join('');
     console.log(newPassword);
     return newPassword;
 
 };
+
+// Write password to the #password input
+function writePassword() {
+    
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
+
+};
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
