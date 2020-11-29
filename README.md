@@ -13,10 +13,10 @@ The application makes use of Javascript to do the required actions to generate a
 <details>
 <summary>Several screenshots of code and website</summary>
 
-[The website with some styling](./images/generatorWebsite.png)
-[The website after it has run the code and generated a password](./images/workingSite.png)
-[The code get user preference](./images/userPreferences.png)
-[The code that generates the user password](./images/generatePassword.png)
+![The website with some styling](./images/generatorWebsite.png)
+![The website after it has run the code and generated a password](./images/workingSite.png)
+![The code get user preference](./images/userPreferences.png)
+![The code that generates the user password](./images/generatePassword.png)
 </details>
 
 ## Credits
