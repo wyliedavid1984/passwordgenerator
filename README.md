@@ -11,7 +11,7 @@ The application makes use of Javascript to do the required actions to generate a
 ## ScreenShots
 
 <details>
-<summary>Several screenshots of code and website</summary>
+<summary>Several screenshots the website and code</summary>
 
 ![The website with some styling](./images/generatorWebsite.png)
 ![The website after it has run the code and generated a password](./images/workingSite.png)
