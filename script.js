@@ -72,22 +72,16 @@ function generatePassword() {
     masterArr.push(...specArr);
   }
 
-
   // If user wants lowercase letter add to master array
   if (useLowerCase === true) {
     masterArr.push(...lowerCaseArr);
   }
 
-
   // If user wants upper case letters add to master array
   if (useUpperCase === true) {
     masterArr.push(...upperCaseArr);
   }
-  console.log(masterArr);
-
-
-  
-  
+  console.log(masterArr)  
 
   //Loop through userLength;
   for (var i = 0; i < userLength; i++) {
@@ -101,10 +95,10 @@ function generatePassword() {
     
   };
 
-
+  // combine user password into a single string.
   newPassword = newPassword.join("");
   console.log(newPassword);
-  //outside of loop return newPass
+  // returns the password value
   return newPassword;
 
 };
