@@ -116,7 +116,7 @@ function generatePassword() {
         newPassword.push(newUnit);
     };
     // combine user password into a single string.
-    
+    console.log(newPassword);
     newPassword= newPassword.join('');
     console.log(newPassword);
    // returns the password value
