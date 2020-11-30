@@ -24,3 +24,7 @@ The application makes use of Javascript to do the required actions to generate a
 * [W3 schools - Javascript links to method and other helpful tools](https://www.w3schools.com/js/default.asp)
 * [Dzone website - An article on several ways to combine arrays](https://dzone.com/articles/ways-to-combine-arrays-in-javascript#:~:text=First%2C%20declare%20an%20empty%20array,called%20a%20two%2Ddimensional%20array.)
 * [Stack Overflow- trouble shooting with errors](https://stackoverflow.com/questions/62910135/type-error-on-line-cannot-read-property-push-of-undefined)
+
+## Link
+
+* [Link to Password Generator](https://wyliedavid1984.github.io/passwordgenerator)
