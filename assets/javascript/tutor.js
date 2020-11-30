@@ -110,15 +110,16 @@ function generatePassword() {
     for (var i = 0; i < userOptions.passwordLength; i++) {
         var newUnit = (getRandomElement(masterArr));
         
-        console.log(newUnit);
+        
         newUnit.toString();
         console.log(newUnit);
         newPassword.push(newUnit);
     };
-
+    // combine user password into a single string.
+    
+    newPassword= newPassword.join('');
     console.log(newPassword);
-    newPassword.join('');
-    console.log(newPassword);
+   // returns the password value
     return newPassword;
 
 };
