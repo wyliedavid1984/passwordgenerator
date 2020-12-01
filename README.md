@@ -17,10 +17,10 @@ The original css that was provided seemed a little bland.  I decide to change up
 <details>
 <summary>Several screenshots the website and code</summary>
 
-![The website with the first prompt](./images/length.png)
-![The website after it has run the code and generated a password](./images/workingSite.png)
-![The code get user preference](./images/userPreferences.png)
-![The code that generates the user password](./images/generatePassword.png)
+![The website with the first prompt](./assets/images/length.png)
+![The website after it has run the code and generated a password](./assets/images/workingSite.png)
+![The code get user preference](./assets/images/userPreferences.png)
+![The code that generates the user password](./assets/images/generatePassword.png)
 </details>
 
 ## Credits
