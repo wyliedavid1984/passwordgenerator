@@ -17,7 +17,7 @@ The original css that was provided seemed a little bland.  I decide to change up
 <details>
 <summary>Several screenshots the website and code</summary>
 
-![The website with some styling](./images/generatorWebsite.png)
+![The website with the first prompt](./images/length.png)
 ![The website after it has run the code and generated a password](./images/workingSite.png)
 ![The code get user preference](./images/userPreferences.png)
 ![The code that generates the user password](./images/generatePassword.png)
